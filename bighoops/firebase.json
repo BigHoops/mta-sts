@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "site": "bighoops-mta-sts",
+    "public": "public",
+    "ignore": ["firebase.json", "**/.git/**", "**/node_modules/**"],
+    "headers": [
+      {
+        "source": "/.well-known/mta-sts.txt",
+        "headers": [
+          { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+        ]
+      }
+    ]
+  }
+}
